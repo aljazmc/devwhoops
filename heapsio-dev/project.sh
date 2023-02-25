@@ -83,7 +83,7 @@ EOF
         XDG_RUNTIME_DIR: $XDG_RUNTIME_DIR
       volumes:
         - .:/usr/src/app
-##        - ./lib:/haxelib
+        - ./lib:/haxelib
         - /tmp/.X11-unix:/tmp/.X11-unix
         - ~/.Xauthority:/root/.Xauthority
       devices:
