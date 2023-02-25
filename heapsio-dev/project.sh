@@ -26,6 +26,21 @@ fi
 
 ############################# START SUBROUTINE #################################
 
+clean() {
+
+  if [[ `ls -ld lib/heaps | awk '{print $3}'` = root ]]; then
+    sudo chmod -R 777 *
+  fi
+
+  docker compose down -v --rmi all --remove-orphans
+
+  rm -rf compile.hxml \
+  docker-compose.yml \
+  Dockerfile \
+  hello.hl \
+  lib
+}
+
 start() {
 
   mkdir -p src lib
