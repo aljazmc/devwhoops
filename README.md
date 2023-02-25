@@ -12,10 +12,10 @@ The basic philosophy is fairly simple:
 * GNU/Linux operating system
 * docker with docker compose plugin
 
-**gog-linux** - for um... detailed "testing" of peripheral devices and help against coding blocks.
-**heapsio-dev** - installs Heaps.io, mature HaXe game engine together with the freshly compiled recent version of HashLink virtual machine.
-**react-native-dev** - installs everything necessary (Android SDK, emulators, node, countless JavaScript libs, ...) to begin development in React Native for Android. iOS not supported!
-**wordpress-dev** - install everything necessary (PHP and JS related) to develop themes/plugins for WordPress.
+**1. gog-linux** - for um... detailed "testing" of peripheral devices and help against coding blocks.
+**2. heapsio-dev** - installs Heaps.io, mature HaXe game engine together with the freshly compiled recent version of HashLink virtual machine.
+**3. react-native-dev** - installs everything necessary (Android SDK, emulators, node, countless JavaScript libs, ...) to begin development in React Native for Android. iOS not supported!
+**4. wordpress-dev** - install everything necessary (PHP and JS related) to develop themes/plugins for WordPress.
 
 ##### LICENSE: [MIT] (https://www.mit.edu/~amini/LICENSE.md)
 
