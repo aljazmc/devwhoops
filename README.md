@@ -1,4 +1,5 @@
 # devWhoops - a collection of scripts to quickly create dockerized development environments
+
 ***
 The basic philosophy is fairly simple:
 1.) with "./project.sh start" you download and setup everything necessary to begin with real work without losing too much time to configure everything.
