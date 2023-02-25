@@ -2,8 +2,8 @@
 
 ***
 The basic philosophy is fairly simple:
-1.) with "./project.sh start" you download and setup everything necessary to begin with real work without losing too much time to configure everything.
-2.) with "./project.sh clean" you clean everything except your project code. Big Whoops potential, use it carefully when changing configuration and remove changed configuration files from "project.sh clean()" function!
+* with "./project.sh start" you download and setup everything necessary to begin with real work without losing too much time to configure everything.
+* with "./project.sh clean" you clean everything except your project code. Big Whoops potential, use it carefully when changing configuration and remove changed configuration files from "project.sh clean()" function!
 
 ##### Trivia:
 1. "Project name" (when applicable) is usually the parent folder (in react-native-dev and wordpress-dev).
