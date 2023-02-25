@@ -1,6 +1,7 @@
 #!/bin/bash
 
-## Checks if OS is linux and docker compose is installed
+## Checks if OS is linux, docker compose is installed and kvm device is in the
+## mood
 
 if ! (( "$OSTYPE" == "gnu-linux" )); then
   echo "script runs only on GNU/Linux OS. Exiting..."
@@ -10,6 +11,11 @@ fi
 if [[ ! -x "$(command -v compose version)" ]]; then
   echo "Compose plugin is not installed. Exiting..."
   exit
+fi
+
+if [[ `ls -ld /dev/kvm | awk '{print $3}'` != `echo $USER` ]]; then
+  echo "We need to make /dev/kvm owned by the current user"
+  sudo chown `echo $USER` /dev/kvm
 fi
 
 ################################################################################
@@ -315,7 +321,7 @@ EOF
       volumes:
         - .:/home/node
         - /tmp/.X11-unix:/tmp/.X11-unix
-        - ~/.Xauthority:/home/node/.Xauthority
+        - ~/.Xauthority:/root/.Xauthority
       devices:
         - /dev/kvm:/dev/kvm
         - /dev/bus/usb:/dev/bus/usb

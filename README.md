@@ -7,7 +7,8 @@ The basic philosophy is fairly simple:
 
 ##### Trivia:
 1. "Project name" (when applicable) is usually the parent folder (in react-native-dev and wordpress-dev).
-2. You need to throw the linux version (with .sh extension) of GOG game in the folder before you run ./project.sh start
+2. You need to throw the linux version (with .sh extension) of GOG game in the folder before you run ./project.sh start.
+3. device kvm ( /dev/kvm ) should be owned by the current user.
 
 ##### Requirements:
 * GNU/Linux operating system
