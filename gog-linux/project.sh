@@ -48,7 +48,7 @@ start() {
   if [[ ! -f Dockerfile ]]; then
     touch Dockerfile && \
     cat <<EOF> Dockerfile
-    FROM ubuntu:18.04
+    FROM debian:bullseye
 
     ENV DEBIAN_FRONTEND=noninteractive
     ENV USER=gog
@@ -64,7 +64,7 @@ start() {
       libasound2-plugins \
       libc6 \
       libcanberra-gtk-module \
-      libcurl3 \
+      libcurl4 \
       libegl1-mesa \
       libgl1-mesa-dri \
       libgl1-mesa-glx \
@@ -72,6 +72,8 @@ start() {
       libgles2-mesa \
       libgtk2.0-0 \
       libnss3 \
+      libpng16-16 \
+      libpng-dev \
       libxml2 \
       libxt6 \
       libudev-dev \
