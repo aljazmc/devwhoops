@@ -7,7 +7,7 @@ The basic philosophy is fairly simple:
 
 ##### Trivia:
 1. "Project name" (when applicable) is usually the parent folder.
-2. You need to throw the linux version (with .sh extension) of GOG game in the folder before you run ./project.sh start.
+2. You need to throw the linux version (with .sh extension) of GOG game in the folder before you run ./project.sh start (for gog-linux).
 3. device kvm ( /dev/kvm ) should be owned by the current user (for react-native-dev).
 4. kvm support must be installed on host (for react-native-dev).
 
