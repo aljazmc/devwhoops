@@ -3,12 +3,13 @@
 ***
 The basic philosophy is fairly simple:
 * with "./project.sh start" you download and setup everything necessary to begin with real work without losing too much time to configure everything.
-* with "./project.sh clean" you clean everything except your project code. Big Whoops potential, use it carefully when changing configuration and remove changed configuration files from "project.sh clean()" function!
+* with "./project.sh clean" you clean everything except your project code. Use it carefully when changing configuration and remove changed configuration files from "project.sh clean()" function!
 
 ##### Trivia:
-1. "Project name" (when applicable) is usually the parent folder (in react-native-dev and wordpress-dev).
+1. "Project name" (when applicable) is usually the parent folder.
 2. You need to throw the linux version (with .sh extension) of GOG game in the folder before you run ./project.sh start.
-3. device kvm ( /dev/kvm ) should be owned by the current user.
+3. device kvm ( /dev/kvm ) should be owned by the current user (for react-native-dev).
+4. kvm support must be installed on host (for react-native-dev).
 
 ##### Requirements:
 * GNU/Linux operating system
