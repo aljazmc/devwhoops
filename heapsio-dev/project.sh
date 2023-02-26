@@ -24,7 +24,7 @@ fi
   PROJECT_AUTHOR=`git config user.name`
   PROJECT_EMAIL=`git config user.email`
 
-############################# START SUBROUTINE #################################
+############################# CLEAN SUBROUTINE #################################
 
 clean() {
 
@@ -40,6 +40,8 @@ clean() {
   hello.hl \
   lib
 }
+
+############################# START SUBROUTINE #################################
 
 start() {
 
