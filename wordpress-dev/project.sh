@@ -309,7 +309,7 @@ EOF
     cat <<-EOF >  phpunit.xml
 <?xml version="1.0" encoding="UTF-8"?>
   <phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-           xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+           xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.0/phpunit.xsd"
            bootstrap="./vendor/autoload.php"
            cacheResultFile=".phpunit.cache/test-results"
            executionOrder="depends,defects"
