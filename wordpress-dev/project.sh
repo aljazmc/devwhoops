@@ -83,6 +83,36 @@ start() {
   fi
   mkdir -p .cache/yarn/v6 .config/yarn/global .yarn/bin docs
 
+  if [[ ! -f docs/README.md ]]; then
+    cat <<EOF > docs/README.md
+PROJECT INITIATION DOCUMENT
+
+1. Project Definition
+
+1. 1. Purpose
+
+1. 2. Objectives
+
+1. 3. Scope
+
+1. 4. Deliverables
+
+1. 5. Constraints
+
+1. 6. Assumptions
+
+2. Organization of a project
+
+3. Plan
+
+3. 1. Activity (with criteria)
+
+3. 2. Timetable
+
+3. 3. Finances
+EOF
+  fi
+
 ## Generate a reminder to improve myself
 
   if [[ ! -f docs/commitrules.txt ]]; then
