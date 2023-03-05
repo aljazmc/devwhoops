@@ -90,7 +90,7 @@ PROJECT INITIATION DOCUMENT
 
 1. 6. Assumptions
 
-2. Organization of a project
+2. Project organization
 
 3. Plan
 
