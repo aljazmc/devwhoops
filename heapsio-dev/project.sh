@@ -47,8 +47,8 @@ start() {
 
   mkdir -p src lib doc
   
-  if [[ ! -f docs/$PROJECT_NAME.txt ]]; then
-    cat <<EOF > docs/$PROJECT_NAME.txt
+  if [[ ! -f doc/$PROJECT_NAME.txt ]]; then
+    cat <<EOF > doc/$PROJECT_NAME.txt
 PROJECT INITIATION DOCUMENT
 
 1. Project Definition
