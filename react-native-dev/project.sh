@@ -57,7 +57,7 @@ clean() {
     docker-compose.yml \
     docker_entrypoint.sh \
     Dockerfile \
-    docs \
+    doc \
     .gitignore \
     ndkTests.sh \
     .emulator_console_auth_token \
@@ -70,10 +70,10 @@ clean() {
 
 start() {
   
-  mkdir -p .android docs
+  mkdir -p .android doc
 
-  if [[ ! -f docs/$PROJECT_NAME.txt ]]; then
-    cat <<EOF > docs/$PROJECT_NAME.txt
+  if [[ ! -f doc/$PROJECT_NAME.txt ]]; then
+    cat <<EOF > doc/$PROJECT_NAME.txt
 PROJECT INITIATION DOCUMENT
 
 1. Project Definition
@@ -104,8 +104,8 @@ EOF
 
 ## Generate a reminder to improve myself
 
-  if [[ ! -f docs/commitrules.txt ]]; then
-    cat <<-EOF > docs/commitrules.txt
+  if [[ ! -f doc/commitrules.txt ]]; then
+    cat <<-EOF > doc/commitrules.txt
 ## URL: https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
 
 Semantic Commit Messages
@@ -163,8 +163,8 @@ ndkTests.sh
 .yarn/
 .yarnrc
 
-# docs folder
-docs/
+# doc folder
+doc/
 
 # Docker - generated in project.sh
 docker-compose.yml
