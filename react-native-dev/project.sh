@@ -72,8 +72,8 @@ start() {
   
   mkdir -p .android docs
 
-  if [[ ! -f docs/README.md ]]; then
-    cat <<EOF > docs/README.md
+  if [[ ! -f docs/$PROJECT_NAME.txt ]]; then
+    cat <<EOF > docs/$PROJECT_NAME.txt
 PROJECT INITIATION DOCUMENT
 
 1. Project Definition
