@@ -29,7 +29,7 @@ clean() {
 
 start() {
 
-mkdir -p .local .cache/pip
+mkdir -p .local .cache/pip .cache/yt-dlp/youtube/nsig
 if [[ ! -f docker-compose.yml ]]; then
   cat<<EOF > docker-compose.yml
 version: "3.9"
