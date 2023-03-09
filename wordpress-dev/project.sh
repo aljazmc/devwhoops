@@ -162,6 +162,7 @@ composer.json
 composer.lock
 docker-compose.yml
 index.php
+jest.config.js
 license.txt
 readme.html
 node_modules
