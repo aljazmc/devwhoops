@@ -136,8 +136,6 @@ EOF
 
 doc/
 
-docker-compose.yml
-
 wp-content/plugins/akismet
 wp-content/plugins/hello.php
 wp-content/plugins/index.php
